@@ -1,44 +1,71 @@
 # DevHelper
 
-Theme oscuro monocromo para [Obsidian](https://obsidian.md), diseñado para el
-plugin DevHelper Dashboard. Fondo casi negro (`#171717`), texto de alto
-contraste (`#e8e8e8`, ratio 14.6:1) y acentos semánticos puntuales: los strings
-van en azul y los números en verde, todo lo demás se mantiene en escala de
-grises para no distraer. Incluye esquinas redondeadas, sombras suaves,
-textura de ruido sutil y adaptación a móvil con safe areas y objetivos
-táctiles de 44 px.
+[English](#english) · [Español](#español)
 
-> Dark only — no soporta modo claro. Sin el modo oscuro activo, Obsidian usa
-> su theme base y este theme no aplica ningún estilo.
+![DevHelper theme](screenshots/screenshot-editor.png)
 
-## Instalación
+---
 
-### Manual (recomendada mientras no esté en la tienda)
+## English
 
-1. Crea la carpeta `<tu-vault>/.obsidian/themes/DevHelper/`.
-2. Copia `theme.css` y `manifest.json` de este repo dentro de esa carpeta.
-3. En Obsidian ve a **Ajustes → Apariencia → Themes** y elige **DevHelper**.
-4. Asegúrate de que el **modo base** está en **Oscuro**.
+A dark, monochrome theme for [Obsidian](https://obsidian.md), designed together
+with the [DevHelper Dashboard](https://github.com/DidierPiracocaCampos/devhelper-obsidian)
+plugin. Near-black background (`#171717`), high-contrast text (`#e8e8e8`,
+14.6:1) and a few semantic accents: strings in blue, numbers in green,
+everything else in greys. Rounded corners, soft shadows, a subtle noise texture
+and mobile support with safe areas and 44 px touch targets.
 
-### Desde la tienda (cuando se publique)
+> **Dark only.** In light mode Obsidian falls back to its base theme.
 
-Busca `DevHelper` en **Ajustes → Apariencia → Gestionar → Explorar themes de
-la comunidad** e instálalo desde ahí.
+### Installation
 
-## Capturas
+- **Community themes** (once approved): *Settings → Appearance → Themes →
+  Manage*, search for **DevHelper**.
+- **Manual**: create `<vault>/.obsidian/themes/DevHelper/`, copy `theme.css`
+  and `manifest.json` into it, then pick **DevHelper** in *Settings →
+  Appearance* with the base color scheme set to **Dark**.
 
-- `screenshots/screenshot.png` — miniatura 16:9 (512×288).
-- `screenshots/screenshot-editor.png` — editor con sidebar en escritorio.
-- `screenshots/screenshot-mobile.png` — vista con emulación móvil a ancho de
-  escritorio (1920×1080); la barra inferior móvil es visible y usa los estilos
-  del theme. Verificada también a ancho estrecho real (414 px): la toolbar se
-  muestra con fondo `--background-secondary` y objetivos de 44 px.
+### Compatibility
 
-## Compatibilidad
+`minAppVersion` 1.0.0 · no dependencies · no `!important` · no remote resources.
 
-- `minAppVersion: 1.0.0`.
-- Sin dependencias, sin `!important`, sin recursos remotos.
+---
 
-## Créditos y licencia
+## Español
 
-Autor: DevHelper (2026). Licencia MIT.
+Theme oscuro y monocromo para [Obsidian](https://obsidian.md), diseñado junto
+al plugin [DevHelper Dashboard](https://github.com/DidierPiracocaCampos/devhelper-obsidian).
+Fondo casi negro (`#171717`), texto de alto contraste (`#e8e8e8`, ratio
+14.6:1) y acentos semánticos puntuales: strings en azul, números en verde y
+todo lo demás en grises. Esquinas redondeadas, sombras suaves, textura de ruido
+sutil y adaptación a móvil con safe areas y objetivos táctiles de 44 px.
+
+> **Solo modo oscuro.** En modo claro Obsidian usa su theme base.
+
+### Instalación
+
+- **Themes de la comunidad** (cuando se apruebe): *Ajustes → Apariencia →
+  Themes → Gestionar*, busca **DevHelper**.
+- **Manual**: crea `<vault>/.obsidian/themes/DevHelper/`, copia `theme.css` y
+  `manifest.json` dentro y elige **DevHelper** en *Ajustes → Apariencia* con el
+  modo base en **Oscuro**.
+
+### Capturas
+
+- `screenshot.png`: miniatura 16:9 (512×288) que usa la tienda.
+- `screenshots/screenshot-editor.png`: editor con sidebar en escritorio.
+- `screenshots/screenshot-mobile.png`: vista móvil.
+
+### Desarrollo
+
+```bash
+node scripts/check-theme.mjs   # valida manifest, variables, URLs y capturas
+```
+
+Publicar: sube `version` en `manifest.json`, haz commit y crea el tag con la
+misma versión (`git tag 1.0.1 && git push origin main --tags`); GitHub Actions
+crea la release.
+
+## License / Licencia
+
+[MIT](LICENSE) © Didier Piracoca

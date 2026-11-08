@@ -70,9 +70,9 @@ function checkThemeCss() {
 }
 
 function checkScreenshot() {
-  const path = join(themeDir, "screenshots", "screenshot.png");
+  const path = join(themeDir, "screenshot.png");
   if (!existsSync(path)) {
-    fail("screenshots/screenshot.png no existe");
+    fail("screenshot.png no existe");
   }
 }
 

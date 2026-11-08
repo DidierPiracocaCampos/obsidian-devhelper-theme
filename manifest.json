@@ -1,6 +1,7 @@
 {
   "name": "DevHelper",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "minAppVersion": "1.0.0",
-  "author": "DevHelper"
+  "author": "Didier Piracoca",
+  "authorUrl": "https://github.com/DidierPiracocaCampos"
 }
