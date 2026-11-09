@@ -17,10 +17,12 @@ and mobile support with safe areas and 44 px touch targets.
 
 > **Dark only.** In light mode Obsidian falls back to its base theme.
 
+Website (Spanish): **[devhelper.didierpiracoca.com/obsidian](https://devhelper.didierpiracoca.com/obsidian#theme)**
+
 ### Installation
 
-- **Community themes** (once approved): *Settings → Appearance → Themes →
-  Manage*, search for **DevHelper**.
+- **Community themes**: *Settings → Appearance → Themes → Manage*, search for
+  **DevHelper**, or open its [store page](https://community.obsidian.md/themes/devhelper).
 - **Manual**: create `<vault>/.obsidian/themes/DevHelper/`, copy `theme.css`
   and `manifest.json` into it, then pick **DevHelper** in *Settings →
   Appearance* with the base color scheme set to **Dark**.
@@ -42,10 +44,13 @@ sutil y adaptación a móvil con safe areas y objetivos táctiles de 44 px.
 
 > **Solo modo oscuro.** En modo claro Obsidian usa su theme base.
 
+Web: **[devhelper.didierpiracoca.com/obsidian](https://devhelper.didierpiracoca.com/obsidian#theme)**
+
 ### Instalación
 
-- **Themes de la comunidad** (cuando se apruebe): *Ajustes → Apariencia →
-  Themes → Gestionar*, busca **DevHelper**.
+- **Themes de la comunidad**: *Ajustes → Apariencia → Themes → Gestionar*,
+  busca **DevHelper**, o abre su
+  [página en la tienda](https://community.obsidian.md/themes/devhelper).
 - **Manual**: crea `<vault>/.obsidian/themes/DevHelper/`, copia `theme.css` y
   `manifest.json` dentro y elige **DevHelper** en *Ajustes → Apariencia* con el
   modo base en **Oscuro**.
